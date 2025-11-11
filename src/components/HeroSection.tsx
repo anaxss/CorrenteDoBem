@@ -19,8 +19,7 @@ export function HeroSection({ onDonateClick }: HeroSectionProps) {
                 <span className="text-lg font-medium">Corrente do Bem</span>
               </div>
               <h1 className="text-4xl md:text-6xl font-bold leading-tight">
-                Transforme vidas através da
-                <span className="text-[#DE8363]"> solidariedade</span>
+                Transforme vidas através da solidariedade
               </h1>
               <p className="text-xl text-white/90 leading-relaxed">
                 Conectamos doadores e pessoas em necessidade, criando uma rede de 
@@ -48,15 +47,15 @@ export function HeroSection({ onDonateClick }: HeroSectionProps) {
 
             <div className="grid grid-cols-3 gap-8 pt-8 border-t border-white/20">
               <div className="text-center">
-                <div className="text-3xl font-bold text-[#DE8363]">1000+</div>
+                <div className="text-3xl font-bold">1000+</div>
                 <div className="text-sm text-white/80">Famílias Atendidas</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-[#DE8363]">500+</div>
+                <div className="text-3xl font-bold">500+</div>
                 <div className="text-sm text-white/80">Voluntários</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-[#DE8363]">50+</div>
+                <div className="text-3xl font-bold">50+</div>
                 <div className="text-sm text-white/80">Pontos de Coleta</div>
               </div>
             </div>

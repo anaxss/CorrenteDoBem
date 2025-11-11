@@ -14,13 +14,13 @@ export function AboutSection() {
       icon: Target,
       title: "Nossa Missão",
       description: "Facilitar o acesso de famílias em situação de vulnerabilidade a itens essenciais como roupas, calçados, alimentos e brinquedos, promovendo dignidade, esperança e transformação social através da solidariedade.",
-      color: "#F8864B"
+      color: "#F5463A"
     },
     {
       icon: Globe,
       title: "Nossa Visão",
       description: "Ser referência em doação solidária, expandindo nossa rede de apoio para alcançar cada vez mais comunidades, construindo uma sociedade mais justa, igualitária e solidária para todos.",
-      color: "#BC4134"
+      color: "#F5463A"
     }
   ];
 

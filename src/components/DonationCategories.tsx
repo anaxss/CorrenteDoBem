@@ -35,7 +35,7 @@ export function DonationCategories({
       description: "Sapatos, tênis e sandálias conservados",
       image:
         "https://images.unsplash.com/photo-1591964447401-b6a88f3dafb7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzaG9lcyUyMGRvbmF0aW9uJTIwY29tbXVuaXR5fGVufDF8fHx8MTc1OTQzMzg2OXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      color: "F8864B",
+      color: "F5463A",
     },
     {
       icon: Utensils,
@@ -44,7 +44,7 @@ export function DonationCategories({
         "Alimentos não perecíveis dentro da validade",
       image:
         "https://images.unsplash.com/photo-1710092784814-4a6f158913b8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmb29kJTIwZG9uYXRpb24lMjBjb21tdW5pdHklMjBoZWxwaW5nfGVufDF8fHx8MTc1OTQzMzg2OHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      color: "BC4134",
+      color: "F5463A",
     },
     {
       icon: Baby,
@@ -53,7 +53,7 @@ export function DonationCategories({
         "Brinquedos seguros e higienizados para crianças",
       image:
         "https://images.unsplash.com/photo-1598838909554-7ed3ccba096d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0b3lzJTIwZG9uYXRpb24lMjBjaGlsZHJlbiUyMGNoYXJpdHl8ZW58MXx8fHwxNzU5NDMzODY5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      color: "DE8363",
+      color: "F5463A",
     },
   ];
 

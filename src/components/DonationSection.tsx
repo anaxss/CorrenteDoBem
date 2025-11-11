@@ -38,7 +38,7 @@ export function DonationSection({
     {
       title: "Calçados",
       icon: "👟",
-      color: "#F8864B",
+      color: "#F5463A",
       description: "Proporcione conforto e mobilidade",
       purpose:
         "Calçados adequados são essenciais para o dia a dia e dignidade das pessoas",
@@ -52,7 +52,7 @@ export function DonationSection({
     {
       title: "Alimentos",
       icon: "🍞",
-      color: "#BC4134",
+      color: "#F5463A",
       description: "Combata a fome com solidariedade",
       purpose:
         "Alimentos não perecíveis ajudam a garantir segurança alimentar para famílias",
@@ -66,7 +66,7 @@ export function DonationSection({
     {
       title: "Brinquedos",
       icon: "🧸",
-      color: "#DE8363",
+      color: "#F5463A",
       description: "Leve alegria às crianças",
       purpose:
         "Brinquedos estimulam o desenvolvimento infantil e trazem esperança",
@@ -94,7 +94,7 @@ export function DonationSection({
       description:
         "Doe seu tempo e talento para transformar vidas",
       action: "Quero Ajudar",
-      color: "#BC4134",
+      color: "#F5463A",
     },
   ];
 
@@ -367,7 +367,7 @@ export function DonationSection({
             <Button
               size="lg"
               variant="outline"
-              className="border-2 border-white text-white hover:bg-white/10"
+              className="bg-white text-[#F5463A] hover:bg-gray-100"
               onClick={() => {
                 const phone = "5511952692300";
                 const message =
