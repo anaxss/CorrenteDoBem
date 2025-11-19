@@ -30,13 +30,13 @@ export function ImpactSection() {
   ];
 
   return (
-    <section id="impacto" className="py-20 bg-white">
+    <section id="impacto" className="py-20 bg-white dark:bg-gray-900 transition-colors">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
             Nosso Impacto
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
             Juntos, criamos uma corrente de solidariedade que transforma vidas e comunidades.
             Veja os números que mostram como sua doação faz a diferença.
           </p>
@@ -46,14 +46,14 @@ export function ImpactSection() {
           {stats.map((stat, index) => {
             const IconComponent = stat.icon;
             return (
-              <Card key={index} className="text-center border-0 shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <Card key={index} className="text-center border-0 shadow-lg hover:shadow-xl transition-shadow duration-300 dark:bg-gray-800">
                 <CardContent className="pt-8 pb-6">
                   <div className="w-16 h-16 bg-[#F5463A] rounded-full flex items-center justify-center mx-auto mb-4">
                     <IconComponent className="w-8 h-8 text-white" />
                   </div>
-                  <div className="text-4xl font-bold text-[#BC4134] mb-2">{stat.number}</div>
-                  <div className="text-lg font-semibold text-gray-900 mb-2">{stat.label}</div>
-                  <p className="text-sm text-gray-600">{stat.description}</p>
+                  <div className="text-4xl font-bold text-[#BC4134] dark:text-[#F8864B] mb-2">{stat.number}</div>
+                  <div className="text-lg font-semibold text-gray-900 dark:text-white mb-2">{stat.label}</div>
+                  <p className="text-sm text-gray-600 dark:text-gray-300">{stat.description}</p>
                 </CardContent>
               </Card>
             );

@@ -39,7 +39,7 @@ export function HeroSection({ onDonateClick }: HeroSectionProps) {
               <Button 
                 variant="outline" 
                 size="lg"
-                className="border-white text-[#F5463A] transition-all duration-300"
+                className="border-white text-white hover:bg-white hover:text-[#F5463A] transition-all duration-300"
               >
                 Saiba Mais
               </Button>

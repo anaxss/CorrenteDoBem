@@ -27,7 +27,9 @@ export function DonationModal({ isOpen, onClose }: DonationModalProps) {
           boxShadow: '0 10px 25px rgba(0,0,0,0.2)',
         }}
       >
-        <DialogHeader>
+        <DialogHeader style={{
+              color: '#000',
+            }}>
           <DialogTitle
             style={{
               fontSize: '1.5rem',
@@ -40,7 +42,6 @@ export function DonationModal({ isOpen, onClose }: DonationModalProps) {
           </DialogTitle>
         </DialogHeader>
 
-        {/* Bloco 1 - O que aceitamos */}
         <div
           style={{
             backgroundColor: 'rgba(245,70,58,0.1)',
@@ -79,7 +80,7 @@ export function DonationModal({ isOpen, onClose }: DonationModalProps) {
             ].map((group, i) => (
               <div key={i}>
                 <h4 style={{ color: '#F5463A', marginBottom: '0.5rem' }}>{group.title}</h4>
-                <ul style={{ fontSize: '0.875rem', listStyle: 'none', padding: 0, margin: 0 }}>
+                <ul style={{ fontSize: '0.875rem', color: '#4B5563', listStyle: 'none', padding: 0, margin: 0 }}>
                   {group.items.map((item, j) => (
                     <li key={j}>• {item}</li>
                   ))}
@@ -89,7 +90,7 @@ export function DonationModal({ isOpen, onClose }: DonationModalProps) {
           </div>
         </div>
 
-        {/* Bloco 2 - Onde entregar */}
+    
         <div
           style={{
             backgroundColor: 'rgba(248,134,75,0.1)',
@@ -102,11 +103,11 @@ export function DonationModal({ isOpen, onClose }: DonationModalProps) {
           </h3>
 
           <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-            {/* Endereço */}
+          
             <div style={{ display: 'flex', alignItems: 'flex-start', gap: '0.75rem' }}>
               <MapPin style={{ width: '1.25rem', height: '1.25rem', color: '#F5463A', marginTop: '0.125rem' }} />
               <div>
-                <p style={{ fontWeight: 500 }}>Centro de Distribuição Corrente do Bem</p>
+                <p style={{ fontWeight: 500, color: '#000' }}>Centro de Distribuição Corrente do Bem</p>
                 <p style={{ fontSize: '0.875rem', color: '#4B5563' }}>
                   R. Santo Alberico Crescitelli, 88 - Vila Missionária
                 </p>
@@ -116,27 +117,24 @@ export function DonationModal({ isOpen, onClose }: DonationModalProps) {
               </div>
             </div>
 
-            {/* Telefone */}
             <div style={{ display: 'flex', alignItems: 'flex-start', gap: '0.75rem' }}>
               <Phone style={{ width: '1.25rem', height: '1.25rem', color: '#F5463A', marginTop: '0.125rem' }} />
               <div>
-                <p style={{ fontWeight: 500 }}>Contato</p>
+                <p style={{ fontWeight: 500, color: '#000'  }}>Contato</p>
                 <p style={{ fontSize: '0.875rem', color: '#4B5563' }}>(11) 95269-2300</p>
               </div>
             </div>
 
-            {/* Email */}
             <div style={{ display: 'flex', alignItems: 'flex-start', gap: '0.75rem' }}>
               <Mail style={{ width: '1.25rem', height: '1.25rem', color: '#F5463A', marginTop: '0.125rem' }} />
               <div>
-                <p style={{ fontWeight: 500 }}>E-mail</p>
-                <p style={{ fontSize: '0.875rem', color: '#4B5563' }}>henriquesjulya@gmail.com</p>
+                <p style={{ fontWeight: 500, color: '#000'  }}>E-mail</p>
+                <p style={{ fontSize: '0.875rem', color: '#4B5563' }}>correntedobem.veleiros@gmail.com</p>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Bloco 3 - Outras formas */}
         <div
           style={{
             backgroundColor: 'rgba(222,131,99,0.1)',
@@ -148,13 +146,12 @@ export function DonationModal({ isOpen, onClose }: DonationModalProps) {
             Outras formas de ajudar:
           </h3>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
-            <p style={{ fontSize: '0.875rem' }}>• Seja um voluntário em nossos eventos</p>
-            <p style={{ fontSize: '0.875rem' }}>• Divulgue nosso trabalho nas redes sociais</p>
-            <p style={{ fontSize: '0.875rem' }}>• Organize campanhas em sua empresa ou escola</p>
+            <p style={{ fontSize: '0.875rem' , color: '#4B5563' }}>• Seja um voluntário em nossos eventos</p>
+            <p style={{ fontSize: '0.875rem' , color: '#4B5563'}}>• Divulgue nosso trabalho nas redes sociais</p>
+            <p style={{ fontSize: '0.875rem' , color: '#4B5563'}}>• Organize campanhas em sua empresa ou escola</p>
           </div>
         </div>
 
-        {/* Botões */}
         <div
           style={{
             display: 'flex',
@@ -163,28 +160,6 @@ export function DonationModal({ isOpen, onClose }: DonationModalProps) {
             gap: '1rem',
           }}
         >
-          <DropdownMenu>
-            <DropdownMenuTrigger asChild>
-              <Button
-                variant="outline"
-                style={{
-                  borderColor: '#F5463A',
-                  color: '#F5463A',
-                  backgroundColor: 'transparent',
-                }}
-                onMouseOver={(e) => (e.currentTarget.style.backgroundColor = 'rgba(245,70,58,0.1)')}
-                onMouseOut={(e) => (e.currentTarget.style.backgroundColor = 'transparent')}
-              >
-                Opções de Doação
-                <ChevronDown style={{ width: '1rem', height: '1rem', marginLeft: '0.5rem' }} />
-              </Button>
-            </DropdownMenuTrigger>
-
-            {/* Menu */}
-            <DropdownMenuContent style={{ width: '14rem' }}>
-              {/* Opções... (mantém sua lógica de onClick com WhatsApp) */}
-            </DropdownMenuContent>
-          </DropdownMenu>
 
           <Button
             onClick={onClose}

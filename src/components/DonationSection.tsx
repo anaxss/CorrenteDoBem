@@ -38,7 +38,7 @@ export function DonationSection({
     {
       title: "Calçados",
       icon: "👟",
-      color: "#F5463A",
+      color: "#F8864B",
       description: "Proporcione conforto e mobilidade",
       purpose:
         "Calçados adequados são essenciais para o dia a dia e dignidade das pessoas",
@@ -52,7 +52,7 @@ export function DonationSection({
     {
       title: "Alimentos",
       icon: "🍞",
-      color: "#F5463A",
+      color: "#BC4134",
       description: "Combata a fome com solidariedade",
       purpose:
         "Alimentos não perecíveis ajudam a garantir segurança alimentar para famílias",
@@ -66,7 +66,7 @@ export function DonationSection({
     {
       title: "Brinquedos",
       icon: "🧸",
-      color: "#F5463A",
+      color: "#DE8363",
       description: "Leve alegria às crianças",
       purpose:
         "Brinquedos estimulam o desenvolvimento infantil e trazem esperança",
@@ -94,7 +94,7 @@ export function DonationSection({
       description:
         "Doe seu tempo e talento para transformar vidas",
       action: "Quero Ajudar",
-      color: "#F5463A",
+      color: "#BC4134",
     },
   ];
 
@@ -127,21 +127,21 @@ export function DonationSection({
   return (
     <section
       id="doar"
-      className="py-20 bg-gradient-to-b from-white to-gray-50"
+      className="py-20 bg-gradient-to-b from-white to-gray-50 dark:from-gray-900 dark:to-gray-800 transition-colors"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 bg-[#F5463A]/10 px-4 py-2 rounded-full mb-6">
+          <div className="inline-flex items-center gap-2 bg-[#F5463A]/10 dark:bg-[#F5463A]/20 px-4 py-2 rounded-full mb-6">
             <Sparkles className="w-5 h-5 text-[#F5463A]" />
-            <span className="text-[#BC4134]">
+            <span className="text-[#BC4134] dark:text-[#F8864B]">
               Faça parte dessa corrente
             </span>
           </div>
-          <h2 className="text-4xl md:text-5xl text-gray-900 mb-6">
+          <h2 className="text-4xl md:text-5xl text-gray-900 dark:text-white mb-6">
             Como Doar
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
             Sua generosidade transforma vidas. Descubra como sua
             contribuição pode fazer a diferença na vida de quem
             mais precisa.
@@ -155,7 +155,7 @@ export function DonationSection({
             return (
               <Card
                 key={index}
-                className="border-2 hover:border-[#F5463A]/50 transition-all duration-300 hover:shadow-xl group"
+                className="border-2 hover:border-[#F5463A]/50 transition-all duration-300 hover:shadow-xl group dark:bg-gray-700 dark:border-gray-600"
               >
                 <CardContent className="p-8 text-center">
                   <div
@@ -169,8 +169,8 @@ export function DonationSection({
                       style={{ color: item.color }}
                     />
                   </div>
-                  <h3 className="text-xl mb-3">{item.title}</h3>
-                  <p className="text-gray-600 mb-6">
+                  <h3 className="text-xl mb-3 dark:text-white">{item.title}</h3>
+                  <p className="text-gray-600 dark:text-gray-300 mb-6">
                     {item.description}
                   </p>
                   <Button
@@ -188,8 +188,8 @@ export function DonationSection({
         </div>
 
         {/* Passo a Passo */}
-        <div className="bg-white rounded-2xl p-8 md:p-12 shadow-lg mb-20">
-          <h3 className="text-3xl text-center mb-12 text-gray-900">
+        <div className="bg-white dark:bg-gray-700 rounded-2xl p-8 md:p-12 shadow-lg mb-20">
+          <h3 className="text-3xl text-center mb-12 text-gray-900 dark:text-white">
             Passo a Passo para Doar
           </h3>
           <div className="grid md:grid-cols-4 gap-8">
@@ -198,8 +198,8 @@ export function DonationSection({
                 <div className="w-16 h-16 bg-gradient-to-br from-[#F5463A] to-[#F8864B] rounded-full flex items-center justify-center mx-auto mb-4 text-white text-2xl">
                   {step.number}
                 </div>
-                <h4 className="mb-2">{step.title}</h4>
-                <p className="text-sm text-gray-600">
+                <h4 className="mb-2 dark:text-white">{step.title}</h4>
+                <p className="text-sm text-gray-600 dark:text-gray-300">
                   {step.description}
                 </p>
                 {index < steps.length - 1 && (
@@ -212,14 +212,14 @@ export function DonationSection({
 
         {/* Categorias Detalhadas */}
         <div className="mb-20">
-          <h3 className="text-3xl text-center mb-12 text-gray-900">
+          <h3 className="text-3xl text-center mb-12 text-gray-900 dark:text-white">
             O que Você Pode Doar
           </h3>
           <div className="grid md:grid-cols-2 gap-8">
             {donationCategories.map((category, index) => (
               <Card
                 key={index}
-                className="border-l-4 hover:shadow-xl transition-all duration-300"
+                className="border-l-4 hover:shadow-xl transition-all duration-300 dark:bg-gray-700 dark:border-gray-600"
                 style={{ borderLeftColor: category.color }}
               >
                 <CardContent className="p-8">
@@ -239,7 +239,7 @@ export function DonationSection({
                       >
                         {category.title}
                       </h4>
-                      <p className="text-gray-600">
+                      <p className="text-gray-600 dark:text-gray-300">
                         {category.description}
                       </p>
                     </div>
@@ -261,7 +261,7 @@ export function DonationSection({
                   </div>
 
                   <div className="space-y-3">
-                    <p className="text-sm text-gray-500 uppercase tracking-wider">
+                    <p className="text-sm text-gray-500 dark:text-gray-400 uppercase tracking-wider">
                       Aceitamos:
                     </p>
                     {category.items.map((item, idx) => (
@@ -273,7 +273,7 @@ export function DonationSection({
                           className="w-5 h-5 mt-0.5 flex-shrink-0"
                           style={{ color: category.color }}
                         />
-                        <span className="text-gray-700">
+                        <span className="text-gray-700 dark:text-gray-300">
                           {item}
                         </span>
                       </div>
@@ -334,7 +334,7 @@ export function DonationSection({
                   <div>
                     <p className="mb-1">E-mail</p>
                     <p className="text-white/90">
-                      henriquesjulya@gmail.com
+                      correntedobem.veleiros@gmail.com
                     </p>
                     <p className="text-sm text-white/80">
                       Respondemos em até 24h
@@ -367,7 +367,7 @@ export function DonationSection({
             <Button
               size="lg"
               variant="outline"
-              className="bg-white text-[#F5463A] hover:bg-gray-100"
+              className="border-2 border-white text-white hover:bg-white/10"
               onClick={() => {
                 const phone = "5511952692300";
                 const message =

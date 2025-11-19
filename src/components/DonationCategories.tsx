@@ -58,13 +58,13 @@ export function DonationCategories({
   ];
 
   return (
-    <section id="doacoes" className="py-20 bg-gray-50">
+    <section id="doacoes" className="py-20 bg-gray-50 dark:bg-gray-800 transition-colors">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
             O que você pode doar?
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
             Cada doação faz a diferença na vida de quem precisa.
             Escolha a categoria e veja como sua contribuição
             pode transformar vidas.
@@ -77,7 +77,7 @@ export function DonationCategories({
             return (
               <Card
                 key={index}
-                className="group hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2"
+                className="group hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 dark:bg-gray-700 dark:border-gray-600"
               >
                 <CardHeader className="pb-4">
                   <div className="relative h-48 mb-4 rounded-lg overflow-hidden">
@@ -95,12 +95,12 @@ export function DonationCategories({
                   >
                     <IconComponent className="w-6 h-6 text-white" />
                   </div>
-                  <CardTitle className="text-xl">
+                  <CardTitle className="text-xl dark:text-white">
                     {category.title}
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-gray-600 mb-6">
+                  <p className="text-gray-600 dark:text-gray-300 mb-6">
                     {category.description}
                   </p>
                   <Button
@@ -116,11 +116,11 @@ export function DonationCategories({
         </div>
 
         <div className="text-center mt-16">
-          <div className="bg-white rounded-2xl p-8 shadow-lg max-w-4xl mx-auto">
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">
+          <div className="bg-white dark:bg-gray-700 rounded-2xl p-8 shadow-lg max-w-4xl mx-auto">
+            <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
               Não tem certeza do que doar?
             </h3>
-            <p className="text-gray-600 mb-6">
+            <p className="text-gray-600 dark:text-gray-300 mb-6">
               Nossa equipe pode te ajudar a identificar quais
               doações são mais necessárias no momento. Entre em
               contato conosco!

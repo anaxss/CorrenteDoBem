@@ -73,7 +73,7 @@ export function Footer({ onDonateClick }: FooterProps) {
 
               <div className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-[#F5463A]" />
-                <span className="text-sm text-gray-400">henriquesjulya@gmail.com</span>
+                <span className="text-sm text-gray-400">correntedobem.veleiros@gmail.com</span>
               </div>
             </div>
           </div>

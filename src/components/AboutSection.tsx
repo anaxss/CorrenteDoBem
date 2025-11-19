@@ -14,13 +14,13 @@ export function AboutSection() {
       icon: Target,
       title: "Nossa Missão",
       description: "Facilitar o acesso de famílias em situação de vulnerabilidade a itens essenciais como roupas, calçados, alimentos e brinquedos, promovendo dignidade, esperança e transformação social através da solidariedade.",
-      color: "#F5463A"
+      color: "#F8864B"
     },
     {
       icon: Globe,
       title: "Nossa Visão",
       description: "Ser referência em doação solidária, expandindo nossa rede de apoio para alcançar cada vez mais comunidades, construindo uma sociedade mais justa, igualitária e solidária para todos.",
-      color: "#F5463A"
+      color: "#BC4134"
     }
   ];
 
@@ -79,18 +79,18 @@ export function AboutSection() {
   ];
 
   return (
-    <section id="sobre" className="py-20 bg-white">
+    <section id="sobre" className="py-20 bg-white dark:bg-gray-900 transition-colors">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 bg-[#F5463A]/10 px-4 py-2 rounded-full mb-6">
+          <div className="inline-flex items-center gap-2 bg-[#F5463A]/10 dark:bg-[#F5463A]/20 px-4 py-2 rounded-full mb-6">
             <Lightbulb className="w-5 h-5 text-[#F5463A]" />
-            <span className="text-[#BC4134]">Conheça nosso propósito</span>
+            <span className="text-[#BC4134] dark:text-[#F8864B]">Conheça nosso propósito</span>
           </div>
-          <h2 className="text-4xl md:text-5xl text-gray-900 mb-6">
+          <h2 className="text-4xl md:text-5xl text-gray-900 dark:text-white mb-6">
             Sobre a Corrente do Bem
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
             Um projeto que une corações e transforma vidas através da solidariedade
           </p>
         </div>
@@ -102,7 +102,7 @@ export function AboutSection() {
             return (
               <Card 
                 key={index}
-                className="border-t-4 hover:shadow-xl transition-all duration-300"
+                className="border-t-4 hover:shadow-xl transition-all duration-300 dark:bg-gray-800 dark:border-gray-700"
                 style={{ borderTopColor: value.color }}
               >
                 <CardContent className="p-8">
@@ -115,7 +115,7 @@ export function AboutSection() {
                   <h3 className="text-2xl mb-4" style={{ color: value.color }}>
                     {value.title}
                   </h3>
-                  <p className="text-gray-600 leading-relaxed">
+                  <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
                     {value.description}
                   </p>
                 </CardContent>
@@ -127,10 +127,10 @@ export function AboutSection() {
         {/* Como Funcionam as Doações */}
         <div className="mb-20">
           <div className="text-center mb-12">
-            <h3 className="text-3xl text-gray-900 mb-4">
+            <h3 className="text-3xl text-gray-900 dark:text-white mb-4">
               Como Funcionam as Doações
             </h3>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
               Um processo transparente e organizado para garantir que sua doação chegue a quem realmente precisa
             </p>
           </div>
@@ -141,17 +141,17 @@ export function AboutSection() {
               return (
                 <div 
                   key={index}
-                  className="relative bg-gradient-to-br from-gray-50 to-white p-6 rounded-xl border-2 border-gray-100 hover:border-[#F5463A]/30 transition-all duration-300 hover:shadow-lg"
+                  className="relative bg-gradient-to-br from-gray-50 to-white dark:from-gray-800 dark:to-gray-700 p-6 rounded-xl border-2 border-gray-100 dark:border-gray-600 hover:border-[#F5463A]/30 transition-all duration-300 hover:shadow-lg"
                 >
                   <div className="absolute -top-4 -left-4 w-12 h-12 bg-gradient-to-br from-[#F5463A] to-[#F8864B] rounded-full flex items-center justify-center text-white text-lg shadow-lg">
                     {step.number}
                   </div>
                   <div className="mt-4">
                     <IconComponent className="w-10 h-10 text-[#F5463A] mb-4" />
-                    <h4 className="text-xl mb-3 text-gray-900">
+                    <h4 className="text-xl mb-3 text-gray-900 dark:text-white">
                       {step.title}
                     </h4>
-                    <p className="text-gray-600 text-sm leading-relaxed">
+                    <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
                       {step.description}
                     </p>
                   </div>
@@ -162,25 +162,25 @@ export function AboutSection() {
         </div>
 
         {/* Nosso Impacto */}
-        <div className="bg-gradient-to-br from-[#F5463A]/5 to-[#F8864B]/5 rounded-3xl p-8 md:p-12 mb-20">
+        <div className="bg-gradient-to-br from-[#F5463A]/5 to-[#F8864B]/5 dark:from-[#F5463A]/10 dark:to-[#F8864B]/10 rounded-3xl p-8 md:p-12 mb-20">
           <div className="text-center mb-12">
-            <h3 className="text-3xl text-gray-900 mb-4">
+            <h3 className="text-3xl text-gray-900 dark:text-white mb-4">
               O Impacto das Suas Doações
             </h3>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
               Cada contribuição gera transformação real na vida de pessoas e comunidades
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {impacts.map((impact, index) => (
-              <Card key={index} className="bg-white hover:shadow-lg transition-shadow duration-300">
+              <Card key={index} className="bg-white dark:bg-gray-800 hover:shadow-lg transition-shadow duration-300">
                 <CardContent className="p-6 text-center">
                   <div className="text-5xl mb-4">{impact.icon}</div>
-                  <h4 className="mb-3 text-[#BC4134]">
+                  <h4 className="mb-3 text-[#BC4134] dark:text-[#F8864B]">
                     {impact.title}
                   </h4>
-                  <p className="text-sm text-gray-600 mb-4">
+                  <p className="text-sm text-gray-600 dark:text-gray-300 mb-4">
                     {impact.description}
                   </p>
                   <div className="text-2xl text-[#F5463A]">
@@ -205,15 +205,15 @@ export function AboutSection() {
 
           <div className="space-y-6">
             <div className="relative">
-              <div className="absolute -left-4 -top-4 text-6xl text-[#F5463A]/20">"</div>
-              <blockquote className="text-2xl text-gray-700 italic pl-8 leading-relaxed">
+              <div className="absolute -left-4 -top-4 text-6xl text-[#F5463A]/20">\"</div>
+              <blockquote className="text-2xl text-gray-700 dark:text-gray-200 italic pl-8 leading-relaxed">
                 A verdadeira medida da nossa riqueza não está no que possuímos, mas no que podemos compartilhar com quem precisa.
               </blockquote>
-              <div className="absolute -right-4 -bottom-4 text-6xl text-[#F5463A]/20">"</div>
+              <div className="absolute -right-4 -bottom-4 text-6xl text-[#F5463A]/20">\"</div>
             </div>
             
             <div className="pl-8 mt-8">
-              <p className="text-gray-600">
+              <p className="text-gray-600 dark:text-gray-300">
                 Acreditamos que pequenos gestos de solidariedade criam ondas de transformação. 
                 Cada doação, cada voluntário, cada pessoa que compartilha nossa causa está ajudando 
                 a construir uma sociedade mais justa e humana.
@@ -223,21 +223,21 @@ export function AboutSection() {
         </div>
 
         {/* Valores e Princípios */}
-        <div className="bg-white rounded-2xl border-2 border-[#F5463A]/20 p-8 md:p-12">
-          <h3 className="text-3xl text-center mb-12 text-gray-900">
+        <div className="bg-white dark:bg-gray-800 rounded-2xl border-2 border-[#F5463A]/20 dark:border-[#F5463A]/30 p-8 md:p-12">
+          <h3 className="text-3xl text-center mb-12 text-gray-900 dark:text-white">
             Nossos Valores e Princípios
           </h3>
           
           <div className="grid md:grid-cols-2 gap-8">
             <div className="flex gap-4">
               <div className="flex-shrink-0">
-                <div className="w-12 h-12 bg-[#F5463A]/10 rounded-full flex items-center justify-center">
+                <div className="w-12 h-12 bg-[#F5463A]/10 dark:bg-[#F5463A]/20 rounded-full flex items-center justify-center">
                   <Heart className="w-6 h-6 text-[#F5463A]" />
                 </div>
               </div>
               <div>
-                <h4 className="text-xl mb-2 text-[#BC4134]">Transparência</h4>
-                <p className="text-gray-600">
+                <h4 className="text-xl mb-2 text-[#BC4134] dark:text-[#F8864B]">Transparência</h4>
+                <p className="text-gray-600 dark:text-gray-300">
                   Prestamos contas de todas as doações recebidas e distribuídas, garantindo total clareza em nossas ações.
                 </p>
               </div>
@@ -245,13 +245,13 @@ export function AboutSection() {
 
             <div className="flex gap-4">
               <div className="flex-shrink-0">
-                <div className="w-12 h-12 bg-[#F8864B]/10 rounded-full flex items-center justify-center">
+                <div className="w-12 h-12 bg-[#F8864B]/10 dark:bg-[#F8864B]/20 rounded-full flex items-center justify-center">
                   <Users className="w-6 h-6 text-[#F8864B]" />
                 </div>
               </div>
               <div>
-                <h4 className="text-xl mb-2 text-[#BC4134]">Respeito</h4>
-                <p className="text-gray-600">
+                <h4 className="text-xl mb-2 text-[#BC4134] dark:text-[#F8864B]">Respeito</h4>
+                <p className="text-gray-600 dark:text-gray-300">
                   Tratamos todos com dignidade, sem julgamentos, reconhecendo a história e as necessidades de cada pessoa.
                 </p>
               </div>
@@ -259,13 +259,13 @@ export function AboutSection() {
 
             <div className="flex gap-4">
               <div className="flex-shrink-0">
-                <div className="w-12 h-12 bg-[#BC4134]/10 rounded-full flex items-center justify-center">
+                <div className="w-12 h-12 bg-[#BC4134]/10 dark:bg-[#BC4134]/20 rounded-full flex items-center justify-center">
                   <Globe className="w-6 h-6 text-[#BC4134]" />
                 </div>
               </div>
               <div>
-                <h4 className="text-xl mb-2 text-[#BC4134]">Inclusão</h4>
-                <p className="text-gray-600">
+                <h4 className="text-xl mb-2 text-[#BC4134] dark:text-[#F8864B]">Inclusão</h4>
+                <p className="text-gray-600 dark:text-gray-300">
                   Atendemos todas as pessoas que precisam, independente de origem, religião ou qualquer outra característica.
                 </p>
               </div>
@@ -273,13 +273,13 @@ export function AboutSection() {
 
             <div className="flex gap-4">
               <div className="flex-shrink-0">
-                <div className="w-12 h-12 bg-[#DE8363]/10 rounded-full flex items-center justify-center">
+                <div className="w-12 h-12 bg-[#DE8363]/10 dark:bg-[#DE8363]/20 rounded-full flex items-center justify-center">
                   <Award className="w-6 h-6 text-[#DE8363]" />
                 </div>
               </div>
               <div>
-                <h4 className="text-xl mb-2 text-[#BC4134]">Excelência</h4>
-                <p className="text-gray-600">
+                <h4 className="text-xl mb-2 text-[#BC4134] dark:text-[#F8864B]">Excelência</h4>
+                <p className="text-gray-600 dark:text-gray-300">
                   Buscamos constantemente melhorar nossos processos para servir melhor quem precisa e quem doa.
                 </p>
               </div>
